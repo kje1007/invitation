@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="2026년 12월 12일 토요일 오후 12시 · 플로렌스 보라매점 29층 카라홀">
+<meta property="og:type" content="website">
+<meta property="og:title" content="찬유 ♥ 지은 결혼식">
+<meta property="og:description" content="2026년 12월 12일 토요일 오후 12시 · 플로렌스 보라매점 29층 카라홀">
+<meta property="og:image" content="images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<title>찬유 ♥ 지은 결혼식</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap">
+<style>
+/* Layout: one 480px "paper" column, centered on wider screens; sections stacked with
+   generous air; the cover is the only full-bleed element. Single theme (no dark
+   override): the couple's chosen look is shown identically to every guest. */
+:root {
+  color-scheme: light;
+  --bg-outer: #E2D8CB;
+  --bg: #F5F0E9;
+  --surface: #ECE4D9;
+  --ink: #3A322A;
+  --muted: #7D705F;
+  --line: #E0D5C7;
+  --accent: #86725D;
+  --accent-soft: #E8DFD3;
+  --on-accent: #FFFDF9;
+  --sun: #A9574A;
+  --on-photo: #FFFFFF;
+  --particle: 205, 186, 160;
+  --f-body: "Gowun Batang", "Noto Serif KR", "AppleMyungjo", "Batang", serif;
+  --f-display: "Gowun Batang", "Noto Serif KR", "AppleMyungjo", "Batang", serif;
+  --f-latin: "Cormorant Garamond", "Cormorant", "Times New Roman", serif;
+  --f-script: "Cormorant Garamond", "Cormorant", "Times New Roman", serif;
+  --script-style: italic;
+  --latin-tracking: 0.3em;
+  --col: 480px;
+  --gutter: 26px;
+  --radius: 14px;
+  --t-xs: 0.75rem;   /* 12px  captions */
+  --t-sm: 0.875rem;  /* 14px  secondary */
+  --t-md: 1rem;      /* 16px  body (never smaller for running text: elders read this) */
+  --t-lg: 1.25rem;   /* 20px  section titles */
+  --t-xl: 1.75rem;   /* 28px  names */
+  --t-2xl: 3.25rem;  /* 52px  big numerals */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; } /* also needed when the page is hosted on its own */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg-outer);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: var(--t-md);
+  line-height: 1.85;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; } /* height:auto so aspect-ratio wins over the height attribute */
+button { font: inherit; color: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+.inv {
+  position: relative;
+  max-width: var(--col);
+  margin: 0 auto;
+  background: var(--bg);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------- shared pieces ---------- */
+.sec { padding: 76px var(--gutter); text-align: center; position: relative; }
+.sec + .sec::before {
+  content: ""; position: absolute; top: 0; left: 50%;
+  width: 1px; height: 36px; background: var(--line); transform: translateX(-50%);
+}
+.eyebrow {
+  margin: 0 0 6px;
+  font-family: var(--f-latin);
+  font-size: var(--t-xs);
+  letter-spacing: var(--latin-tracking);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.sec-title {
+  margin: 0 0 28px;
+  font-family: var(--f-display);
+  font-size: var(--t-lg);
+  font-weight: 700;
+  line-height: 1.5;
+  text-wrap: balance;
+}
+.prose { margin: 0; white-space: pre-line; text-wrap: pretty; }
+.muted { color: var(--muted); }
+.small { font-size: var(--t-sm); }
+.num { font-family: var(--f-latin); font-variant-numeric: tabular-nums lining-nums; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-height: 44px; padding: 0 18px;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--bg); color: var(--ink);
+  font-size: var(--t-sm); text-decoration: none; cursor: pointer;
+  transition: background .2s, border-color .2s;
+}
+.btn:hover { border-color: var(--accent); }
+.btn.solid { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn.small-btn { min-height: 34px; padding: 0 12px; font-size: var(--t-xs); }
+.btn-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 22px; }
+.btn svg { width: 15px; height: 15px; flex: none; }
+
+/* ---------- cover: arch ---------- */
+.cover { position: relative; }
+.cover-arch { padding: 56px var(--gutter) 64px; text-align: center; }
+.cover-kicker {
+  margin: 0 0 26px;
+  font-family: var(--f-script); font-style: var(--script-style);
+  font-size: 1.375rem; color: var(--accent); line-height: 1.3;
+}
+.arch {
+  position: relative; margin: 0 auto; width: min(100%, 330px);
+}
+.arch::after {
+  content: ""; position: absolute; inset: -9px; border: 1px solid var(--line);
+  border-radius: 1000px 1000px 4px 4px; pointer-events: none;
+}
+.arch img {
+  width: 100%; aspect-ratio: 3 / 4; object-fit: cover;
+  border-radius: 1000px 1000px 4px 4px;
+}
+.cover-names {
+  margin: 38px 0 10px;
+  font-family: var(--f-display); font-weight: 400;
+  font-size: var(--t-xl); line-height: 1.3; letter-spacing: 0.04em;
+  display: flex; align-items: baseline; justify-content: center; gap: 16px; flex-wrap: wrap;
+}
+.cover-names i {
+  font-family: var(--f-latin); font-style: italic; font-size: 1.05rem;
+  color: var(--muted); letter-spacing: 0;
+}
+.cover-when { margin: 0; font-family: var(--f-latin); letter-spacing: 0.12em; font-size: 0.95rem; }
+.cover-where { margin: 2px 0 0; color: var(--muted); font-size: var(--t-sm); }
+
+/* ---------- cover: full-bleed ---------- */
+.cover-full .full-photo { position: relative; aspect-ratio: 3 / 4.2; max-height: 92vh; width: 100%; }
+.cover-full img { width: 100%; height: 100%; object-fit: cover; }
+.cover-full .shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 52%, rgba(0,0,0,.55) 100%);
+}
+.cover-full .full-top, .cover-full .full-bottom {
+  position: absolute; left: 0; right: 0; padding: 0 var(--gutter); color: var(--on-photo); text-align: center;
+}
+.cover-full .full-top { top: 26px; }
+.cover-full .full-top p {
+  margin: 0; font-family: var(--f-latin); font-size: var(--t-xs);
+  letter-spacing: var(--latin-tracking); text-transform: uppercase;
+}
+.cover-full .full-bottom { bottom: 30px; }
+.cover-full .full-date { margin: 0; font-family: var(--f-latin); font-size: var(--t-2xl); line-height: 1; letter-spacing: 0.04em; }
+.cover-full .full-names { margin: 14px 0 0; font-family: var(--f-display); font-size: 1.25rem; letter-spacing: 0.08em; }
+.cover-full .full-names i { font-family: var(--f-latin); font-style: italic; margin: 0 8px; opacity: .85; }
+.cover-full .full-sub { padding: 30px var(--gutter) 6px; text-align: center; }
+.cover-full .full-sub p { margin: 0; }
+
+/* ---------- cover: editorial ---------- */
+.cover-editorial { padding: 40px var(--gutter) 60px; }
+.ed-top {
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px solid var(--ink); padding-bottom: 8px;
+  font-family: var(--f-latin); font-size: var(--t-xs); letter-spacing: var(--latin-tracking); text-transform: uppercase;
+}
+.ed-date {
+  margin: 22px 0 18px; font-family: var(--f-latin); font-weight: 400;
+  font-size: clamp(4.5rem, 26vw, 7.5rem); line-height: .9; letter-spacing: -0.02em; text-align: left;
+}
+.ed-date span { color: var(--accent); font-style: italic; padding: 0 .04em; }
+.ed-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.ed-names {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  margin-top: 16px; font-family: var(--f-display); font-size: 1.375rem;
+}
+.ed-names i { font-family: var(--f-latin); font-style: italic; color: var(--muted); font-size: 1rem; }
+.ed-meta { margin: 8px 0 0; text-align: left; color: var(--muted); font-size: var(--t-sm); line-height: 1.7; white-space: pre-line; }
+
+/* ---------- greeting & parents ---------- */
+.greet-body { font-size: 1.03rem; line-height: 2.05; }
+.quote { margin: 0 0 40px; color: var(--muted); font-size: var(--t-sm); white-space: pre-line; }
+.quote cite { display: block; margin-top: 8px; font-style: normal; font-size: var(--t-xs); }
+.parents { margin: 40px auto 0; display: grid; gap: 10px; max-width: 340px; }
+.parent-line { display: flex; justify-content: center; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.parent-line .pn { font-family: var(--f-display); }
+.parent-line .rel { color: var(--muted); font-size: var(--t-sm); }
+.parent-line strong { font-family: var(--f-display); font-size: 1.125rem; font-weight: 700; margin-left: 4px; }
+.dec { font-size: .85em; color: var(--muted); margin-right: 2px; }
+
+/* ---------- couple (groom & bride portraits) ---------- */
+.couple { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
+.couple figure { margin: 0; }
+.couple img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px; background: var(--surface); }
+.couple figcaption { margin-top: 16px; display: grid; gap: 2px; }
+.couple .role { font-family: var(--f-latin); font-size: var(--t-xs); letter-spacing: var(--latin-tracking); text-transform: uppercase; color: var(--accent); }
+.couple .who-name { font-family: var(--f-display); font-size: 1.25rem; font-weight: 700; letter-spacing: 0.06em; }
+.couple .who-par { font-size: var(--t-sm); color: var(--muted); line-height: 1.6; }
+.couple .who-par .dec { margin-right: 1px; }
+.couple-and { margin: 26px 0 0; font-family: var(--f-latin); font-style: italic; color: var(--muted); }
+
+/* ---------- story ---------- */
+.story { list-style: none; margin: 0 auto; padding: 0; max-width: 360px; text-align: left; display: grid; gap: 26px; }
+.story li { display: grid; grid-template-columns: 74px 1fr; gap: 14px; }
+.story .s-date { font-family: var(--f-latin); color: var(--accent); font-size: 0.95rem; padding-top: 1px; }
+.story h3 { margin: 0; font-family: var(--f-display); font-size: 1.0625rem; }
+.story p { margin: 2px 0 0; color: var(--muted); font-size: var(--t-sm); white-space: pre-line; }
+.story figure { grid-column: 2; margin: 6px 0 0; }
+.story figure img { border-radius: 6px; aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+
+/* ---------- calendar ---------- */
+.when-line { margin: 0; font-size: 1.0625rem; }
+.when-sub { margin: 2px 0 30px; color: var(--muted); font-size: var(--t-sm); }
+.cal-wrap { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 18px 4px 14px; }
+.cal-month { margin: 0 0 10px; font-family: var(--f-latin); letter-spacing: var(--latin-tracking); font-size: var(--t-sm); }
+.cal { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: var(--f-latin); font-variant-numeric: tabular-nums lining-nums; }
+.cal th { font-weight: 400; font-size: var(--t-xs); color: var(--muted); padding: 4px 0 8px; font-family: var(--f-body); }
+.cal td { height: 40px; font-size: 0.95rem; }
+.cal .sun { color: var(--sun); }
+.cal .day-mark span {
+  display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+  background: var(--accent); color: var(--on-accent);
+}
+.countdown { display: flex; justify-content: center; gap: 10px; margin: 30px 0 0; }
+.countdown div { min-width: 58px; padding: 10px 6px 8px; border-radius: 10px; background: var(--surface); }
+.countdown b { display: block; font-family: var(--f-latin); font-weight: 400; font-size: 1.5rem; line-height: 1.1; font-variant-numeric: tabular-nums lining-nums; }
+.countdown small { display: block; font-family: var(--f-latin); font-size: 0.625rem; letter-spacing: 0.18em; color: var(--muted); margin-top: 4px; }
+.dday { margin: 20px 0 0; font-size: var(--t-sm); }
+.dday b { color: var(--accent); font-weight: 700; }
+
+/* ---------- gallery ---------- */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.grid button { padding: 0; border: 0; background: var(--surface); cursor: zoom-in; aspect-ratio: 1; overflow: hidden; }
+.grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.grid button:hover img { transform: scale(1.04); }
+.grid.portrait { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.grid.portrait button { aspect-ratio: 3 / 4; border-radius: 3px; }
+.grid .more-hidden { display: none; }
+.grid.expanded .more-hidden { display: block; }
+
+.lb {
+  position: fixed; inset: 0; z-index: 60; background: #0C0C0E; color: #F4F2EE;
+  display: grid; grid-template-rows: auto 1fr auto; touch-action: pan-y;
+}
+.lb-bar { display: flex; justify-content: space-between; align-items: center; padding: calc(10px + env(safe-area-inset-top, 0px)) 12px 10px; }
+.lb-count { font-family: var(--f-latin); letter-spacing: .15em; font-size: var(--t-sm); padding-left: 8px; }
+.lb-stage { position: relative; display: grid; place-items: center; overflow: hidden; min-height: 0; }
+.lb-stage img { max-width: 100%; max-height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; }
+.lb-nav { display: flex; justify-content: center; gap: 24px; padding: 10px 0 calc(18px + env(safe-area-inset-bottom, 0px)); }
+.icon-btn {
+  width: 44px; height: 44px; border-radius: 50%; border: 0; background: transparent; color: inherit;
+  display: grid; place-items: center; cursor: pointer;
+}
+.icon-btn svg { width: 22px; height: 22px; }
+
+/* ---------- location ---------- */
+.venue { margin: 0; font-family: var(--f-display); font-size: 1.125rem; font-weight: 700; }
+.addr { margin: 4px 0 0; color: var(--muted); font-size: var(--t-sm); }
+.map-img { margin: 26px 0 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.map-img img { width: 100%; }
+.map-btn { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.map-wrap { margin: 26px calc(-1 * var(--gutter)) 0; }  /* full width: map labels stay legible on phones */
+.map-wrap .map-img { margin: 0; border: 0; border-radius: 0; border-block: 1px solid var(--line); }
+.map-hint { margin: 8px 0 0; font-size: var(--t-xs); color: var(--muted); }
+.map-card {
+  margin: 26px 0 0; padding: 26px 18px; border: 1px solid var(--line); border-radius: 8px;
+  background:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 28px 28px,
+    var(--surface);
+}
+.map-card .pin { width: 26px; height: 26px; margin: 0 auto 6px; color: var(--accent); }
+.map-card p { margin: 0; display: inline-block; background: var(--bg); padding: 4px 12px; border-radius: 999px; font-size: var(--t-sm); }
+.transport { margin: 34px 0 0; text-align: left; display: grid; gap: 0; }
+.transport div { display: grid; grid-template-columns: 64px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+.transport div:last-child { border-bottom: 1px solid var(--line); }
+.transport dt { font-weight: 700; font-size: var(--t-sm); color: var(--accent); }
+.transport dd { margin: 0; font-size: 0.9375rem; white-space: pre-line; min-width: 0; }
+
+/* ---------- notices ---------- */
+.notices { display: grid; gap: 12px; text-align: left; }
+.notice { padding: 20px 20px 18px; border-radius: var(--radius); background: var(--surface); }
+.notice h3 { margin: 0 0 6px; font-family: var(--f-display); font-size: 1rem; }
+.notice p { margin: 0; font-size: 0.9375rem; white-space: pre-line; }
+
+/* ---------- accounts ---------- */
+.acc-intro { margin: 0 0 26px; font-size: 0.9375rem; white-space: pre-line; text-wrap: pretty; }
+.acc-groups { display: grid; gap: 10px; text-align: left; }
+.acc-group { border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); overflow: hidden; }
+.acc-group summary {
+  list-style: none; cursor: pointer; padding: 16px 18px; display: flex; justify-content: space-between; align-items: center;
+  font-weight: 700; background: var(--surface);
+}
+.acc-group summary::-webkit-details-marker { display: none; }
+.acc-group summary svg { width: 16px; height: 16px; transition: transform .25s; color: var(--muted); }
+.acc-group[open] summary svg { transform: rotate(180deg); }
+.acct { padding: 16px 18px; border-top: 1px solid var(--line); display: grid; gap: 2px; }
+.acct-who { font-size: var(--t-sm); color: var(--muted); }
+.acct-num { font-size: 1rem; font-variant-numeric: tabular-nums; }
+.acct .btn-row { justify-content: flex-start; margin-top: 8px; gap: 6px; }
+
+/* ---------- rsvp ---------- */
+.rsvp-card { padding: 30px 22px; border-radius: var(--radius); background: var(--surface); }
+.rsvp-card p { margin: 0; }
+.deadline { margin-top: 8px !important; font-size: var(--t-sm); color: var(--muted); }
+
+.form { display: grid; gap: 16px; text-align: left; }
+.field label, .field .lab { display: block; font-size: var(--t-sm); margin-bottom: 6px; color: var(--muted); }
+.field input, .field textarea, .field select {
+  width: 100%; min-height: 46px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--bg); color: var(--ink); font: inherit; font-size: 1rem;
+}
+.field textarea { min-height: 84px; resize: vertical; }
+.seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg label {
+  margin: 0; min-height: 44px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 10px;
+  color: var(--ink); background: var(--bg); cursor: pointer; font-size: var(--t-sm);
+}
+.seg input:checked + label { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.seg input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px; }
+.composed {
+  margin: 0; padding: 16px; border-radius: 10px; background: var(--surface); white-space: pre-wrap;
+  font-size: 0.9375rem; user-select: text; -webkit-user-select: text; text-align: left;
+}
+.form-error { margin: 0; color: var(--sun); font-size: var(--t-sm); }
+
+/* ---------- closing ---------- */
+.ending-photo { margin: 0 0 30px; }
+.ending-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; }
+.expiry-note { margin: 34px 0 0; font-size: var(--t-xs); color: var(--muted); }
+
+/* ---------- sheet (contacts, rsvp) ---------- */
+.backdrop { position: fixed; inset: 0; z-index: 50; background: rgba(10, 10, 12, .45); }
+.sheet {
+  position: fixed; z-index: 51; left: 50%; bottom: 0; transform: translateX(-50%);
+  width: min(100%, var(--col)); max-height: 88vh; overflow-y: auto;
+  background: var(--bg); color: var(--ink); border-radius: 20px 20px 0 0;
+  padding: 10px var(--gutter) calc(28px + env(safe-area-inset-bottom, 0px));
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, .18);
+}
+.sheet-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.sheet-head h2 { margin: 0; font-family: var(--f-display); font-size: 1.125rem; }
+.contact-group h3 { margin: 18px 0 4px; font-size: var(--t-xs); font-family: var(--f-latin); letter-spacing: var(--latin-tracking); color: var(--accent); text-transform: uppercase; }
+.contact { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.contact .who { min-width: 0; }
+.contact .who small { display: block; color: var(--muted); font-size: var(--t-xs); }
+.contact .who span { font-variant-numeric: tabular-nums; user-select: text; -webkit-user-select: text; }
+.contact .btn-row { margin: 0; justify-content: flex-end; gap: 6px; }
+
+/* ---------- toast, bgm, effects ---------- */
+.toast {
+  position: fixed; z-index: 70; left: 50%; bottom: calc(28px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%); padding: 10px 18px; border-radius: 999px;
+  background: var(--ink); color: var(--bg); font-size: var(--t-sm); max-width: calc(100% - 40px); text-align: center;
+}
+.bgm {
+  position: fixed; z-index: 40; top: calc(12px + env(safe-area-inset-top, 0px));
+  right: max(12px, calc((100vw - var(--col)) / 2 + 12px));
+  width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); display: grid; place-items: center; cursor: pointer; opacity: .92;
+}
+.bgm svg { width: 17px; height: 17px; }
+.bgm[aria-pressed="true"] { color: var(--accent); border-color: var(--accent); }
+.fx { position: fixed; inset: 0; z-index: 30; pointer-events: none; width: 100%; height: 100%; }
+
+/* ---------- expired ---------- */
+.expired { min-height: 80vh; display: grid; place-items: center; padding: 60px var(--gutter); text-align: center; }
+.expired .seal {
+  width: 64px; height: 64px; margin: 0 auto 26px; border-radius: 50%; border: 1px solid var(--line);
+  display: grid; place-items: center; color: var(--accent);
+}
+.expired .seal svg { width: 26px; height: 26px; }
+.expired h1 { margin: 0 0 12px; font-family: var(--f-display); font-size: 1.25rem; }
+.expired p { margin: 0; white-space: pre-line; color: var(--muted); }
+
+/* gentle entrance from a visible resting state */
+@media (prefers-reduced-motion: no-preference) {
+  .cover-arch .arch, .cover-editorial .ed-photo, .cover-full img { animation: settle 1.6s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes settle { from { transform: scale(1.035); } to { transform: none; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+@media (max-width: 360px) {
+  :root { --gutter: 20px; }
+  .countdown div { min-width: 52px; }
+}
+</style>
+</head>
+<body>
+<main class="inv" id="inv" aria-live="polite"></main>
+<script type="application/json" id="inv-data">{"groom":{"name":"김찬유","first_name":"찬유","relation":"아들","father":{"name":"김동휘","deceased":false},"mother":{"name":"김선경","deceased":false}},"bride":{"name":"김지은","first_name":"지은","relation":"딸","father":{"name":"김진식","deceased":false},"mother":{"name":"정미경","deceased":false}},"wedding":{"datetime":"2026-12-12T12:00:00+09:00","duration_minutes":120,"venue":"플로렌스 보라매점","hall":"29층 카라홀","address":"서울 동작구 보라매로5길 15 전문건설회관","map_query":"플로렌스 보라매점","lat":37.4920775,"lng":126.9243461},"cover_style":"arch","cover_kicker":"We are getting married","effect":"petals","greeting":{"title":"소중한 분들을 초대합니다","body":"서로 다른 길을 걸어온 두 사람이\n같은 곳을 바라보며 걷기로 했습니다.\n\n저희의 첫걸음에 함께해 주시면\n더없는 기쁨으로 간직하겠습니다."},"quote":null,"story":null,"gallery":{"layout":"portrait","initial_count":6},"couple":{"title":"신랑 신부를 소개합니다"},"photos":{"cover":{"src":"images/p12.jpg","w":1240,"h":1595},"gallery":[{"src":"images/p10.jpg","w":896,"h":1195,"thumb":"images/p10_t.jpg","tw":540,"th":720},{"src":"images/p02.jpg","w":896,"h":1195,"thumb":"images/p02_t.jpg","tw":540,"th":720},{"src":"images/p04.jpg","w":896,"h":1593,"thumb":"images/p04_t.jpg","tw":405,"th":720},{"src":"images/p11.jpg","w":804,"h":1034,"thumb":"images/p11_t.jpg","tw":560,"th":720},{"src":"images/p09.jpg","w":896,"h":1200,"thumb":"images/p09_t.jpg","tw":538,"th":720},{"src":"images/p03.jpg","w":1200,"h":1600,"thumb":"images/p03_t.jpg","tw":540,"th":720},{"src":"images/p08.jpg","w":896,"h":1200,"thumb":"images/p08_t.jpg","tw":538,"th":720},{"src":"images/p05.jpg","w":1200,"h":1600,"thumb":"images/p05_t.jpg","tw":540,"th":720},{"src":"images/p06.jpg","w":1200,"h":1600,"thumb":"images/p06_t.jpg","tw":540,"th":720},{"src":"images/p07.jpg","w":1200,"h":1600,"thumb":"images/p07_t.jpg","tw":540,"th":720},{"src":"images/p14.jpg","w":1199,"h":1600,"thumb":"images/p14_t.jpg","tw":540,"th":720},{"src":"images/p01.jpg","w":1200,"h":1600,"thumb":"images/p01_t.jpg","tw":540,"th":720},{"src":"images/p12.jpg","w":1240,"h":1595,"thumb":"images/p12_t.jpg","tw":560,"th":720},{"src":"images/p13.jpg","w":1200,"h":1600,"thumb":"images/p13_t.jpg","tw":540,"th":720}],"ending":{"src":"images/p13.jpg","w":1200,"h":1600},"groom_portrait":{"src":"images/p16.jpg","w":1200,"h":1600},"bride_portrait":{"src":"images/p15.jpg","w":1200,"h":1600},"map":{"src":"images/map.png","w":1200,"h":1400}},"location":{"transport":[{"label":"지하철","body":"신림선 보라매병원역 2번 출구\n전문건설회관 지하와 바로 연결됩니다\n(7호선 보라매역 · 2호선 신림역 · 1호선 대방역에서 신림선 환승)"},{"label":"버스","body":"동작05 · 153\n'전문건설회관' 또는 '보라매병원' 정류장 하차\n5525 · 5516 '보라매병원' 정류장 하차"},{"label":"주차","body":"전문건설회관 건물 주차장 이용\n하객 3시간 무료"}]},"notices":[{"title":"식사 안내","body":"예식 후 뷔페가 준비되어 있습니다.\n편하게 식사하고 가세요."}],"accounts":{"display":"accordion","intro":"참석이 어려우신 분들을 위해\n계좌번호를 함께 안내드립니다.\n너그러운 마음으로 양해 부탁드립니다.","groom_side":[{"role":"신랑","holder":"김찬유","bank":"카카오뱅크","number":"3333-10-5015833"},{"role":"신랑 아버지","holder":"김동휘","bank":"신한은행","number":"110-041-449753"},{"role":"신랑 어머니","holder":"김선경","bank":"하나은행","number":"623-115227-00108"}],"bride_side":[{"role":"신부","holder":"김지은","bank":"카카오뱅크","number":"3333-05-8088029"},{"role":"신부 아버지","holder":"김진식","bank":"국민은행","number":"038701-04-438502"},{"role":"신부 어머니","holder":"정미경","bank":"카카오뱅크","number":"3333-31-9362933"}]},"rsvp":{"mode":"none"},"share":{"url":"auto"},"closing":{"text":"축복해 주신 마음 잊지 않고\n행복하게 잘 살겠습니다."},"bgm":null,"sections":["cover","greeting","couple","calendar","gallery","location","notices","accounts","closing"],"expiry":{"expires_at":"2027-01-13T00:00:00+09:00","message":"보내주신 축하와 응원에 깊이 감사드립니다."},"_meta":{"theme":"sand","title":"찬유 ♥ 지은 결혼식","built":"2026-10-28T15:41:16+09:00"}}</script>
+<script>
+(function () {
+  "use strict";
+  var D = JSON.parse(document.getElementById("inv-data").textContent);
+  var root = document.getElementById("inv");
+  var KST = 9 * 3600 * 1000;
+  var DAY = 86400000;
+  function now() { return typeof window.__INV_NOW__ === "number" ? window.__INV_NOW__ : Date.now(); }
+
+  /* ---------- tiny DOM helper (textContent only: every string is escaped) ---------- */
+  function h(tag, attrs) {
+    var el = document.createElement(tag);
+    if (attrs) for (var k in attrs) {
+      var v = attrs[k];
+      if (v === null || v === undefined || v === false) continue;
+      if (k === "class") el.className = v;
+      else if (k === "text") el.textContent = v;
+      else if (k === "html") el.innerHTML = v; /* only used with constant SVG strings below */
+      else if (k.slice(0, 2) === "on") el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v === true ? "" : v);
+    }
+    for (var i = 2; i < arguments.length; i++) {
+      var c = arguments[i];
+      if (c === null || c === undefined || c === false) continue;
+      if (Array.isArray(c)) c.forEach(function (x) { if (x) el.appendChild(typeof x === "string" ? document.createTextNode(x) : x); });
+      else el.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+    }
+    return el;
+  }
+  var ICON = {
+    copy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>',
+    phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>',
+    sms: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg>',
+    close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+    left: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
+    right: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>',
+    chev: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>',
+    pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>',
+    music: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg>',
+    cal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>',
+    link: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>',
+    map: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>',
+    envelope: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="M3.5 6.5l8.5 7 8.5-7"/></svg>'
+  };
+  function icon(name) { return h("span", { html: ICON[name], style: "display:contents" }); }
+
+  /* ---------- dates, always in Korea time regardless of the guest's phone ---------- */
+  function kst(ms) {
+    var d = new Date(ms + KST);
+    return { y: d.getUTCFullYear(), m: d.getUTCMonth() + 1, d: d.getUTCDate(), w: d.getUTCDay(), H: d.getUTCHours(), M: d.getUTCMinutes() };
+  }
+  function kstMidnight(ms) { var k = kst(ms); return Date.UTC(k.y, k.m - 1, k.d) - KST; }
+  var WD_KO = ["일", "월", "화", "수", "목", "금", "토"];
+  var WD_EN = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  var MON_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+  function timeKo(k) {
+    var ap = k.H < 12 ? "오전" : "오후"; var hh = k.H % 12 === 0 ? 12 : k.H % 12;
+    return ap + " " + hh + "시" + (k.M ? " " + k.M + "분" : "");
+  }
+  function timeEn(k) {
+    var ap = k.H < 12 ? "AM" : "PM"; var hh = k.H % 12 === 0 ? 12 : k.H % 12;
+    return ap + " " + hh + ":" + (k.M < 10 ? "0" : "") + k.M;
+  }
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function dateKo(k) { return k.y + "년 " + k.m + "월 " + k.d + "일 " + WD_KO[k.w] + "요일"; }
+  function dateDots(k) { return k.y + ". " + pad(k.m) + ". " + pad(k.d) + "."; }
+
+  var W = Date.parse(D.wedding.datetime);
+  var WK = kst(W);
+  var EXP = D.expiry && D.expiry.expires_at ? Date.parse(D.expiry.expires_at) : null;
+  var G = D.groom, B = D.bride;
+  var namesShort = (G.first_name || G.name) + " · " + (B.first_name || B.name);
+
+  /* ---------- feedback ---------- */
+  var toastTimer;
+  function toast(msg) {
+    var t = document.querySelector(".toast");
+    if (!t) { t = h("div", { class: "toast", role: "status" }); document.body.appendChild(t); }
+    t.textContent = msg; t.hidden = false;
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.hidden = true; }, 2200);
+  }
+  function copyText(text, label) {
+    function fallback() {
+      var ta = h("textarea", { readonly: true, style: "position:fixed;top:0;left:0;opacity:0" });
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      var ok = false; try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      ta.remove();
+      if (ok) toast(josa(label || "내용", "을", "를") + " 복사했어요");
+      else openSheet("길게 눌러 복사해 주세요", h("pre", { class: "composed", text: text }));
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { toast(josa(label || "내용", "을", "를") + " 복사했어요"); }, fallback);
+      } else fallback();
+    } catch (e) { fallback(); }
+  }
+  function digits(s) { return String(s || "").replace(/[^0-9+]/g, ""); }
+  /* Korean particle by final consonant: josa("하린", "이", "가") -> "하린이" */
+  function josa(word, withBatchim, without) {
+    var c = String(word || "").charCodeAt(String(word || "").length - 1);
+    var has = c >= 0xAC00 && c <= 0xD7A3 ? (c - 0xAC00) % 28 !== 0 : false;
+    return word + (has ? withBatchim : without);
+  }
+
+  /* ---------- sheet ---------- */
+  var lastFocus = null;
+  function closeSheet() {
+    var s = document.querySelector(".sheet"), b = document.querySelector(".backdrop");
+    if (s) s.remove(); if (b) b.remove();
+    document.body.style.overflow = "";
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  function openSheet(title, content) {
+    closeSheet();
+    lastFocus = document.activeElement;
+    var b = h("div", { class: "backdrop", onclick: closeSheet });
+    var closeBtn = h("button", { class: "icon-btn", "aria-label": "닫기", onclick: closeSheet }, icon("close"));
+    var s = h("div", { class: "sheet", role: "dialog", "aria-modal": "true", "aria-label": title },
+      h("div", { class: "sheet-head" }, h("h2", { text: title }), closeBtn), content);
+    document.body.appendChild(b); document.body.appendChild(s);
+    document.body.style.overflow = "hidden";
+    closeBtn.focus();
+  }
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeSheet(); closeLightbox(); } });
+
+  function section(id, eyebrow, title) {
+    var s = h("section", { class: "sec", id: id, "aria-label": title || eyebrow });
+    if (eyebrow) s.appendChild(h("p", { class: "eyebrow", text: eyebrow }));
+    if (title) s.appendChild(h("h2", { class: "sec-title", text: title }));
+    return s;
+  }
+  function photoImg(p, alt, eager) {
+    if (!p) return null;
+    return h("img", { src: p.src, width: p.w, height: p.h, alt: alt || "", loading: eager ? "eager" : "lazy", decoding: "async", fetchpriority: eager ? "high" : null });
+  }
+
+  /* ---------- sections ---------- */
+  var order = D.sections || ["cover", "greeting", "couple", "story", "calendar", "gallery", "location", "notices", "accounts", "rsvp", "closing"];
+  var R = {};
+
+  R.cover = function () {
+    var style = D.cover_style || "arch";
+    var coverAlt = josa(G.first_name || G.name, "과", "와") + " " + (B.first_name || B.name) + "의 웨딩 사진";
+    var p = D.photos && D.photos.cover;
+    var whenLine = dateDots(WK) + " " + WD_EN[WK.w] + " · " + timeEn(WK);
+    var where = [D.wedding.venue, D.wedding.hall].filter(Boolean).join(" ");
+    if (style === "full") {
+      return h("header", { class: "cover cover-full" },
+        h("div", { class: "full-photo" }, photoImg(p, coverAlt, true), h("div", { class: "shade" }),
+          h("div", { class: "full-top" }, h("p", { text: D.cover_kicker || "We are getting married" })),
+          h("div", { class: "full-bottom" },
+            h("p", { class: "full-date", text: pad(WK.m) + "." + pad(WK.d) }),
+            h("p", { class: "full-names" }, G.first_name || G.name, h("i", { text: "&" }), B.first_name || B.name))),
+        h("div", { class: "full-sub" }, h("p", { class: "cover-when", text: whenLine }), h("p", { class: "cover-where", text: where })));
+    }
+    if (style === "editorial") {
+      return h("header", { class: "cover cover-editorial" },
+        h("div", { class: "ed-top" }, h("span", { text: String(WK.y) }), h("span", { text: D.cover_kicker || "Wedding Invitation" })),
+        h("p", { class: "ed-date", "aria-label": WK.m + "월 " + WK.d + "일" }, pad(WK.m), h("span", { text: "/" }), pad(WK.d)),
+        h("figure", { class: "ed-photo", style: "margin:0" }, photoImg(p, coverAlt, true)),
+        h("div", { class: "ed-names" }, h("span", { text: G.name }), h("i", { text: "and" }), h("span", { text: B.name })),
+        h("p", { class: "ed-meta", text: dateKo(WK) + " " + timeKo(WK) + "\n" + where }));
+    }
+    return h("header", { class: "cover cover-arch" },
+      h("p", { class: "cover-kicker", text: D.cover_kicker || "We are getting married" }),
+      h("figure", { class: "arch", style: "margin-inline:auto;margin-block:0" }, photoImg(p, coverAlt, true)),
+      h("h1", { class: "cover-names" }, h("span", { text: G.first_name || G.name }), h("i", { text: "and" }), h("span", { text: B.first_name || B.name })),
+      h("p", { class: "cover-when", text: whenLine }),
+      h("p", { class: "cover-where", text: where }));
+  };
+
+  function parentNames(p) {
+    var out = [];
+    ["father", "mother"].forEach(function (k) {
+      var x = p[k]; if (!x || !x.name) return;
+      if (out.length) out.push(" · ");
+      if (x.deceased) out.push(h("span", { class: "dec", text: "故" }));
+      out.push(x.name);
+    });
+    return out;
+  }
+  function parentLine(p) {
+    var hasParents = (p.father && p.father.name) || (p.mother && p.mother.name);
+    return h("p", { class: "parent-line", style: "margin:0" },
+      hasParents ? h("span", { class: "pn" }, parentNames(p)) : null,
+      hasParents ? h("span", { class: "rel", text: "의 " + (p.relation || "") }) : null,
+      h("strong", { text: p.first_name || p.name }));
+  }
+  function hasContacts() {
+    return [G, B].some(function (p) { return p.phone || (p.father && p.father.phone && !p.father.deceased) || (p.mother && p.mother.phone && !p.mother.deceased); });
+  }
+  function contactRow(label, name, phone) {
+    var tel = digits(phone);
+    return h("div", { class: "contact" },
+      h("div", { class: "who" }, h("small", { text: label }), name + " ", h("span", { text: phone })),
+      h("div", { class: "btn-row" },
+        h("a", { class: "btn small-btn", href: "tel:" + tel, "aria-label": name + "에게 전화" }, icon("phone"), "전화"),
+        h("a", { class: "btn small-btn", href: "sms:" + tel, "aria-label": name + "에게 문자" }, icon("sms"), "문자"),
+        h("button", { class: "btn small-btn", type: "button", "aria-label": name + " 번호 복사", onclick: function () { copyText(phone, "전화번호"); } }, icon("copy"))));
+  }
+  function openContacts() {
+    var wrap = h("div");
+    [["신랑측", G, "신랑", "신랑 아버지", "신랑 어머니"], ["신부측", B, "신부", "신부 아버지", "신부 어머니"]].forEach(function (row) {
+      var p = row[1]; var g = h("div", { class: "contact-group" }, h("h3", { text: row[0] === "신랑측" ? "Groom" : "Bride" }));
+      var n = 0;
+      if (p.phone) { g.appendChild(contactRow(row[2], p.name, p.phone)); n++; }
+      if (p.father && p.father.phone && !p.father.deceased) { g.appendChild(contactRow(row[3], p.father.name, p.father.phone)); n++; }
+      if (p.mother && p.mother.phone && !p.mother.deceased) { g.appendChild(contactRow(row[4], p.mother.name, p.mother.phone)); n++; }
+      if (n) wrap.appendChild(g);
+    });
+    wrap.appendChild(h("p", { class: "small muted", style: "margin:16px 0 0", text: "전화·문자 버튼이 열리지 않으면 번호를 복사해 주세요." }));
+    openSheet("연락하기", wrap);
+  }
+
+  R.greeting = function () {
+    var g = D.greeting || {};
+    var s = section("greeting", g.eyebrow || "Invitation", g.title || "소중한 분들을 초대합니다");
+    if (D.quote && D.quote.text) s.appendChild(h("blockquote", { class: "quote" }, D.quote.text, D.quote.source ? h("cite", { text: D.quote.source }) : null));
+    if (g.body) s.appendChild(h("p", { class: "prose greet-body", text: g.body }));
+    if (order.indexOf("couple") === -1) s.appendChild(h("div", { class: "parents" }, parentLine(G), parentLine(B)));
+    if (hasContacts()) s.appendChild(h("div", { class: "btn-row", style: "margin-top:30px" },
+      h("button", { class: "btn", type: "button", onclick: openContacts }, icon("phone"), "연락하기")));
+    return s;
+  };
+
+  R.couple = function () {
+    var P = D.photos || {};
+    if (!P.groom_portrait && !P.bride_portrait) return null;
+    var c = D.couple || {};
+    var s = section("couple", c.eyebrow || "Groom & Bride", c.title || "신랑 신부를 소개합니다");
+    function card(p, photo, roleEn, roleKo) {
+      var hasParents = (p.father && p.father.name) || (p.mother && p.mother.name);
+      return h("figure", null,
+        photoImg(photo, roleKo + " " + p.name),
+        h("figcaption", null,
+          h("span", { class: "role", text: roleEn }),
+          h("span", { class: "who-name", text: p.name }),
+          hasParents ? h("span", { class: "who-par" }, parentNames(p), h("br"), "의 " + (p.relation || "")) : null));
+    }
+    s.appendChild(h("div", { class: "couple" }, card(G, P.groom_portrait, "Groom", "신랑"), card(B, P.bride_portrait, "Bride", "신부")));
+    if (c.line) s.appendChild(h("p", { class: "couple-and", text: c.line }));
+    return s;
+  };
+
+  R.story = function () {
+    var st = D.story; if (!st || !st.items || !st.items.length) return null;
+    var s = section("story", st.eyebrow || "Our Story", st.title || "우리의 이야기");
+    s.appendChild(h("ol", { class: "story" }, st.items.map(function (it) {
+      return h("li", null,
+        h("span", { class: "s-date", text: it.date || "" }),
+        h("div", null, h("h3", { text: it.title || "" }), it.body ? h("p", { text: it.body }) : null),
+        it.photo ? h("figure", null, photoImg(it.photo, it.title || "")) : null);
+    })));
+    return s;
+  };
+
+  var cdTimer = null;
+  R.calendar = function () {
+    var s = section("calendar", "The Day", null);
+    s.appendChild(h("p", { class: "when-line sec-title", style: "margin-bottom:4px", text: dateKo(WK) }));
+    s.appendChild(h("p", { class: "when-sub", text: timeKo(WK) + " · " + [D.wedding.venue, D.wedding.hall].filter(Boolean).join(" ") }));
+    var first = new Date(Date.UTC(WK.y, WK.m - 1, 1)).getUTCDay();
+    var days = new Date(Date.UTC(WK.y, WK.m, 0)).getUTCDate();
+    var thead = h("tr", null, WD_KO.map(function (d, i) { return h("th", { class: i === 0 ? "sun" : null, scope: "col", text: d }); }));
+    var rows = [], cells = [];
+    for (var i = 0; i < first; i++) cells.push(h("td"));
+    for (var d = 1; d <= days; d++) {
+      var wd = (first + d - 1) % 7;
+      var isDay = d === WK.d;
+      cells.push(h("td", { class: [wd === 0 ? "sun" : "", isDay ? "day-mark" : ""].join(" ").trim() || null, "aria-current": isDay ? "date" : null },
+        isDay ? h("span", { text: String(d) }) : String(d)));
+      if (cells.length === 7) { rows.push(h("tr", null, cells)); cells = []; }
+    }
+    if (cells.length) { while (cells.length < 7) cells.push(h("td")); rows.push(h("tr", null, cells)); }
+    s.appendChild(h("div", { class: "cal-wrap" },
+      h("p", { class: "cal-month", text: MON_EN[WK.m - 1] + " " + WK.y }),
+      h("table", { class: "cal", "aria-label": WK.y + "년 " + WK.m + "월 달력" }, h("thead", null, thead), h("tbody", null, rows))));
+
+    var cd = h("div", { class: "countdown", "aria-hidden": "true" });
+    var dd = h("p", { class: "dday" });
+    function tick() {
+      var diff = W - now();
+      var dayDiff = Math.round((kstMidnight(W) - kstMidnight(now())) / DAY);
+      var who = (G.first_name || G.name) + " ♥ " + (B.first_name || B.name);
+      dd.textContent = "";
+      if (dayDiff > 0) dd.append(who + "의 결혼식이 ", h("b", { text: dayDiff + "일" }), " 남았습니다");
+      else if (dayDiff === 0) dd.append(h("b", { text: "오늘" }), ", " + who + " 결혼합니다");
+      else dd.append(who + ", 결혼한 지 ", h("b", { text: (-dayDiff) + "일" }), "이 지났어요");
+      cd.hidden = diff <= 0;
+      if (diff > 0) {
+        var t = Math.floor(diff / 1000);
+        var parts = [[Math.floor(t / 86400), "DAYS"], [Math.floor(t % 86400 / 3600), "HOUR"], [Math.floor(t % 3600 / 60), "MIN"], [t % 60, "SEC"]];
+        cd.replaceChildren.apply(cd, parts.map(function (p) { return h("div", null, h("b", { text: p[1] === "DAYS" ? String(p[0]) : pad(p[0]) }), h("small", { text: p[1] })); }));
+      }
+    }
+    tick(); clearInterval(cdTimer); cdTimer = setInterval(tick, 1000);
+    s.appendChild(cd); s.appendChild(dd);
+
+    var start = new Date(W), end = new Date(W + (D.wedding.duration_minutes || 120) * 60000);
+    function gfmt(d) { return d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, ""); }
+    var gcal = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+      "&text=" + encodeURIComponent(namesShort + " 결혼식") +
+      "&dates=" + gfmt(start) + "/" + gfmt(end) +
+      "&location=" + encodeURIComponent([D.wedding.venue, D.wedding.hall, D.wedding.address].filter(Boolean).join(" ")) +
+      "&ctz=Asia/Seoul";
+    s.appendChild(h("div", { class: "btn-row" }, h("a", { class: "btn", href: gcal, target: "_blank", rel: "noopener" }, icon("cal"), "구글 캘린더에 추가")));
+    return s;
+  };
+
+  /* gallery + lightbox */
+  var LB = null, lbIndex = 0, lbList = [];
+  function closeLightbox() { if (LB) { LB.remove(); LB = null; document.body.style.overflow = ""; } }
+  function openLightbox(list, i) {
+    closeLightbox(); lbList = list; lbIndex = i;
+    var img = h("img", { alt: "" });
+    var count = h("span", { class: "lb-count" });
+    function show(n) {
+      lbIndex = (n + lbList.length) % lbList.length;
+      var p = lbList[lbIndex]; img.src = p.src; img.alt = lbList.length > 1 ? "웨딩 사진 " + (lbIndex + 1) : "크게 보기";
+      count.textContent = lbList.length > 1 ? (lbIndex + 1) + " / " + lbList.length : "";
+      [lbIndex + 1, lbIndex - 1].forEach(function (j) { var q = lbList[(j + lbList.length) % lbList.length]; if (q) { var pre = new Image(); pre.src = q.src; } });
+    }
+    var stage = h("div", { class: "lb-stage" }, img);
+    var sx = null, sy = null;
+    stage.addEventListener("pointerdown", function (e) { sx = e.clientX; sy = e.clientY; });
+    stage.addEventListener("pointerup", function (e) {
+      if (sx === null) return; var dx = e.clientX - sx, dy = e.clientY - sy; sx = null;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) show(lbIndex + (dx < 0 ? 1 : -1));
+    });
+    LB = h("div", { class: "lb", role: "dialog", "aria-modal": "true", "aria-label": "사진 크게 보기" },
+      h("div", { class: "lb-bar" }, count, h("button", { class: "icon-btn", "aria-label": "닫기", onclick: closeLightbox }, icon("close"))),
+      stage,
+      list.length > 1 ? h("div", { class: "lb-nav" },
+        h("button", { class: "icon-btn", "aria-label": "이전 사진", onclick: function () { show(lbIndex - 1); } }, icon("left")),
+        h("button", { class: "icon-btn", "aria-label": "다음 사진", onclick: function () { show(lbIndex + 1); } }, icon("right"))) : h("div", { class: "lb-nav" }));
+    LB.addEventListener("keydown", function (e) { if (e.key === "ArrowRight") show(lbIndex + 1); if (e.key === "ArrowLeft") show(lbIndex - 1); });
+    document.body.appendChild(LB); document.body.style.overflow = "hidden";
+    show(i); LB.querySelector("button").focus();
+  }
+  R.gallery = function () {
+    var list = (D.photos && D.photos.gallery) || []; if (!list.length) return null;
+    var cfg = D.gallery || {};
+    var s = section("gallery", cfg.eyebrow || "Gallery", cfg.title || "우리의 순간");
+    var limit = cfg.initial_count || 9;
+    var grid = h("div", { class: cfg.layout === "portrait" ? "grid portrait" : "grid" }, list.map(function (p, i) {
+      return h("button", { type: "button", class: i >= limit ? "more-hidden" : null, "aria-label": "사진 " + (i + 1) + " 크게 보기", onclick: function () { openLightbox(list, i); } },
+        photoImg({ src: p.thumb || p.src, w: p.tw || p.w, h: p.th || p.h }, ""));
+    }));
+    s.appendChild(grid);
+    if (list.length > limit) {
+      var more = h("button", { class: "btn", type: "button", onclick: function () { grid.classList.add("expanded"); more.parentNode.remove(); } }, "사진 " + (list.length - limit) + "장 더보기");
+      s.appendChild(h("div", { class: "btn-row" }, more));
+    }
+    return s;
+  };
+
+  R.location = function () {
+    var w = D.wedding, L = D.location || {};
+    var s = section("location", "Location", L.title || "오시는 길");
+    s.appendChild(h("p", { class: "venue", text: [w.venue, w.hall].filter(Boolean).join(" ") }));
+    if (w.address) s.appendChild(h("p", { class: "addr" }, w.address));
+    if (w.tel) s.appendChild(h("p", { class: "addr" }, "Tel. ", h("a", { href: "tel:" + digits(w.tel), text: w.tel })));
+    if (D.photos && D.photos.map) s.appendChild(h("div", { class: "map-wrap" },
+      h("figure", { class: "map-img" },
+        h("button", { class: "map-btn", type: "button", "aria-label": "약도 크게 보기", onclick: function () { openLightbox([D.photos.map], 0); } },
+          photoImg(D.photos.map, w.venue + " 약도"))),
+      h("p", { class: "map-hint", text: "약도를 누르면 크게 볼 수 있어요" })));
+    else s.appendChild(h("div", { class: "map-card" }, h("div", { class: "pin", html: ICON.pin }), h("p", { text: w.venue })));
+    var q = w.map_query || [w.venue, w.address].filter(Boolean)[0];
+    var naver = w.naver_map_url || ("https://map.naver.com/p/search/" + encodeURIComponent(q));
+    var kakao = w.kakao_map_url || ((w.lat && w.lng)
+      ? "https://map.kakao.com/link/to/" + encodeURIComponent(w.venue) + "," + w.lat + "," + w.lng
+      : "https://map.kakao.com/link/search/" + encodeURIComponent(q));
+    var row = h("div", { class: "btn-row" },
+      h("a", { class: "btn", href: naver, target: "_blank", rel: "noopener" }, icon("map"), "네이버 지도"),
+      h("a", { class: "btn", href: kakao, target: "_blank", rel: "noopener" }, icon("map"), "카카오맵"));
+    if (w.address) row.appendChild(h("button", { class: "btn", type: "button", onclick: function () { copyText(w.address, "주소"); } }, icon("copy"), "주소 복사"));
+    s.appendChild(row);
+    if (L.transport && L.transport.length) {
+      s.appendChild(h("dl", { class: "transport" }, L.transport.map(function (t) {
+        return h("div", null, h("dt", { text: t.label }), h("dd", { text: t.body }));
+      })));
+    }
+    return s;
+  };
+
+  R.notices = function () {
+    var n = D.notices; if (!n || !n.length) return null;
+    var s = section("notices", "Information", "안내 말씀");
+    s.appendChild(h("div", { class: "notices" }, n.map(function (x) { return h("div", { class: "notice" }, h("h3", { text: x.title }), h("p", { text: x.body })); })));
+    return s;
+  };
+
+  R.accounts = function () {
+    var A = D.accounts; if (!A) return null;
+    var sides = [["groom_side", "신랑측 계좌번호"], ["bride_side", "신부측 계좌번호"]].filter(function (x) { return A[x[0]] && A[x[0]].length; });
+    if (!sides.length) return null;
+    var s = section("accounts", "With Gratitude", A.title || "마음 전하실 곳");
+    s.appendChild(h("p", { class: "acc-intro", text: A.intro || "참석이 어려우신 분들을 위해\n계좌번호를 함께 안내드립니다.\n너그러운 마음으로 양해 부탁드립니다." }));
+    s.appendChild(h("div", { class: "acc-groups" }, sides.map(function (x) {
+      return h("details", { class: "acc-group", open: A.display === "open" },
+        h("summary", null, h("span", { text: x[1] }), icon("chev")),
+        A[x[0]].map(function (a) {
+          var btns = [h("button", { class: "btn small-btn", type: "button", onclick: function () { copyText(a.bank + " " + a.number, "계좌번호"); } }, icon("copy"), "복사")];
+          if (a.kakaopay) btns.push(h("a", { class: "btn small-btn", href: a.kakaopay, target: "_blank", rel: "noopener" }, "카카오페이"));
+          if (a.toss) btns.push(h("a", { class: "btn small-btn", href: a.toss, target: "_blank", rel: "noopener" }, "토스"));
+          return h("div", { class: "acct" },
+            h("span", { class: "acct-who", text: [a.role, a.holder].filter(Boolean).join(" · ") }),
+            h("span", { class: "acct-num", text: a.bank + " " + a.number }),
+            h("div", { class: "btn-row" }, btns));
+        }));
+    })));
+    return s;
+  };
+
+  function openRsvpForm() {
+    var R2 = D.rsvp || {};
+    function seg(name, opts) {
+      return h("div", { class: "seg", role: "radiogroup" }, opts.map(function (o, i) {
+        var id = "rsvp-" + name + "-" + i;
+        return [h("input", { type: "radio", name: name, id: id, value: o, checked: i === 0 }), h("label", { for: id, text: o })];
+      }).reduce(function (a, b) { return a.concat(b); }, []));
+    }
+    var err = h("p", { class: "form-error", role: "alert" });
+    var nameIn = h("input", { id: "rsvp-name", autocomplete: "name", maxlength: "20" });
+    var countIn = h("input", { id: "rsvp-count", type: "number", min: "1", max: "10", value: "1", inputmode: "numeric" });
+    var noteIn = h("textarea", { id: "rsvp-note", maxlength: "200", placeholder: "축하 한마디 (선택)" });
+    var fields = [
+      h("div", { class: "field" }, h("span", { class: "lab", text: "어느 쪽 하객이신가요?" }), seg("side", ["신랑측", "신부측"])),
+      h("div", { class: "field" }, h("span", { class: "lab", text: "참석 여부" }), seg("attend", ["참석할게요", "참석이 어려워요"])),
+      h("div", { class: "field" }, h("label", { for: "rsvp-name", text: "성함" }), nameIn),
+      h("div", { class: "field" }, h("label", { for: "rsvp-count", text: "참석 인원 (본인 포함)" }), countIn)
+    ];
+    if (R2.ask_meal !== false) fields.push(h("div", { class: "field" }, h("span", { class: "lab", text: "식사" }), seg("meal", ["식사 예정", "식사 안 함", "미정"])));
+    fields.push(h("div", { class: "field" }, h("label", { for: "rsvp-note", text: "메시지" }), noteIn), err);
+    var form = h("form", { class: "form", novalidate: true }, fields,
+      h("button", { class: "btn solid", type: "submit", style: "width:100%" }, "메시지 만들기"));
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = nameIn.value.trim();
+      if (!name) { err.textContent = "성함을 입력해 주세요."; nameIn.focus(); return; }
+      var v = function (n) { var x = form.querySelector('input[name="' + n + '"]:checked'); return x ? x.value : ""; };
+      var attend = v("attend"); var side = v("side");
+      var lines = ["[" + namesShort + " 결혼식 참석 의사]", "성함: " + name, "구분: " + side, "참석: " + attend];
+      if (attend === "참석할게요") {
+        lines.push("인원: " + Math.max(1, parseInt(countIn.value, 10) || 1) + "명");
+        if (R2.ask_meal !== false) lines.push("식사: " + v("meal"));
+      }
+      if (noteIn.value.trim()) lines.push("메시지: " + noteIn.value.trim());
+      var text = lines.join("\n");
+      var to = side === "신부측" ? B : G;
+      var body = h("div", { class: "form" },
+        h("p", { class: "small muted", style: "margin:0", text: "아래 메시지를 복사해 " + (side === "신부측" ? "신부" : "신랑") + "에게 보내 주세요." }),
+        h("pre", { class: "composed", text: text }),
+        h("button", { class: "btn solid", type: "button", style: "width:100%", onclick: function () { copyText(text, "메시지"); } }, icon("copy"), "메시지 복사"),
+        to.phone ? h("a", { class: "btn", style: "width:100%", href: "sms:" + digits(to.phone) + "?&body=" + encodeURIComponent(text) }, icon("sms"), (side === "신부측" ? "신부" : "신랑") + "에게 문자로 보내기") : null,
+        to.phone ? h("p", { class: "small muted", style: "margin:0", text: "문자 앱이 열리지 않으면 복사한 메시지를 " + to.phone + " 번호로 보내 주세요." }) : null);
+      openSheet("참석 의사 전달", body);
+    });
+    openSheet("참석 의사 전달", form);
+  }
+  R.rsvp = function () {
+    var r = D.rsvp; if (!r || !r.mode || r.mode === "none") return null;
+    var s = section("rsvp", "R.S.V.P.", r.title || "참석 의사 전달");
+    var card = h("div", { class: "rsvp-card" },
+      h("p", { class: "prose", text: r.body || "귀한 걸음 해주시는 분들을 위해\n정성껏 자리를 준비하려 합니다.\n참석 여부를 미리 알려주시면\n큰 도움이 됩니다." }),
+      r.deadline ? h("p", { class: "deadline", text: r.deadline + "까지 알려주세요" }) : null);
+    var btn = r.mode === "form" && r.form_url
+      ? h("a", { class: "btn solid", href: r.form_url, target: "_blank", rel: "noopener" }, icon("envelope"), "참석 의사 전달하기")
+      : h("button", { class: "btn solid", type: "button", onclick: openRsvpForm }, icon("envelope"), "참석 의사 전달하기");
+    card.appendChild(h("div", { class: "btn-row" }, btn));
+    s.appendChild(card);
+    return s;
+  };
+
+  R.closing = function () {
+    var c = D.closing || {};
+    var s = section("closing", c.eyebrow || "Thank You", null);
+    if (D.photos && D.photos.ending) s.appendChild(h("figure", { class: "ending-photo" }, photoImg(D.photos.ending, "웨딩 사진")));
+    s.appendChild(h("p", { class: "prose", text: c.text || "저희의 새로운 시작을\n축복해 주셔서 감사합니다." }));
+    s.appendChild(h("p", { class: "muted small", style: "margin:14px 0 0", text: G.name + " · " + B.name }));
+    var shareUrl = D.share && D.share.url === "auto" ? location.href.split("#")[0] : (D.share && D.share.url);
+    if (shareUrl) s.appendChild(h("div", { class: "btn-row" },
+      h("button", { class: "btn", type: "button", onclick: function () { copyText(shareUrl, "청첩장 링크"); } }, icon("link"), "청첩장 링크 복사")));
+    if (EXP) { var ek = kst(EXP - 60000); /* last viewable minute: 00:00 expiry = through the previous day */
+      s.appendChild(h("p", { class: "expiry-note", text: "이 청첩장은 " + ek.y + "년 " + ek.m + "월 " + ek.d + "일까지 열람하실 수 있어요." })); }
+    return s;
+  };
+
+  /* ---------- background music (starts only from a tap) ---------- */
+  function mountBgm() {
+    if (!D.bgm || !D.bgm.src) return;
+    var audio = new Audio(); audio.src = D.bgm.src; audio.loop = true; audio.preload = "none";
+    var b = h("button", { class: "bgm", type: "button", "aria-pressed": "false", "aria-label": "배경음악 켜기", html: ICON.music });
+    b.addEventListener("click", function () {
+      if (audio.paused) { audio.play().then(function () { b.setAttribute("aria-pressed", "true"); b.setAttribute("aria-label", "배경음악 끄기"); }, function () { toast("음악을 재생할 수 없어요"); }); }
+      else { audio.pause(); b.setAttribute("aria-pressed", "false"); b.setAttribute("aria-label", "배경음악 켜기"); }
+    });
+    document.body.appendChild(b);
+    window.__invAudio = audio;
+  }
+
+  /* ---------- petals / snow (decorative, honours reduced motion) ---------- */
+  var fxRaf = null;
+  function mountEffect() {
+    var kind = D.effect; if (!kind || kind === "none") return;
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var cv = h("canvas", { class: "fx", "aria-hidden": "true" }); document.body.appendChild(cv);
+    var ctx = cv.getContext("2d"); if (!ctx) return;
+    var rgb = getComputedStyle(document.documentElement).getPropertyValue("--particle").trim() || "255,255,255";
+    var dpr = Math.min(window.devicePixelRatio || 1, 2), W2, H2, P = [];
+    var N = kind === "snow" ? 34 : 16;
+    function size() { W2 = cv.width = innerWidth * dpr; H2 = cv.height = innerHeight * dpr; }
+    function spawn(p, top) {
+      p.x = Math.random() * W2; p.y = top ? -20 * dpr : Math.random() * H2;
+      p.r = (kind === "snow" ? 1.2 + Math.random() * 2.2 : 5 + Math.random() * 5) * dpr;
+      p.vy = (kind === "snow" ? 0.35 + Math.random() * 0.5 : 0.45 + Math.random() * 0.55) * dpr;
+      p.vx = (Math.random() - 0.5) * 0.4 * dpr; p.a = Math.random() * 6.28; p.va = (Math.random() - 0.5) * 0.02;
+      p.o = 0.35 + Math.random() * 0.45; p.sway = Math.random() * 6.28;
+      return p;
+    }
+    size(); addEventListener("resize", size);
+    for (var i = 0; i < N; i++) P.push(spawn({}, false));
+    function frame() {
+      ctx.clearRect(0, 0, W2, H2);
+      P.forEach(function (p) {
+        p.sway += 0.012; p.x += p.vx + Math.sin(p.sway) * 0.35 * dpr; p.y += p.vy; p.a += p.va;
+        if (p.y > H2 + 20 * dpr) spawn(p, true);
+        ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.globalAlpha = p.o;
+        ctx.fillStyle = "rgb(" + rgb + ")";
+        ctx.beginPath();
+        if (kind === "snow") ctx.arc(0, 0, p.r, 0, 6.283);
+        else { ctx.ellipse(0, 0, p.r, p.r * 0.62, 0, 0, 6.283); }
+        ctx.fill(); ctx.restore();
+      });
+      fxRaf = requestAnimationFrame(frame);
+    }
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) { cancelAnimationFrame(fxRaf); fxRaf = null; } else if (!fxRaf) frame();
+    });
+    frame();
+  }
+
+  /* ---------- expiry ---------- */
+  function renderExpired() {
+    clearInterval(cdTimer); if (fxRaf) cancelAnimationFrame(fxRaf);
+    closeLightbox(); closeSheet();
+    document.querySelectorAll(".fx, .bgm, .toast").forEach(function (n) { n.remove(); });
+    if (window.__invAudio) { try { window.__invAudio.pause(); } catch (e) {} }
+    var ek = kst(EXP - 60000);
+    root.replaceChildren(h("div", { class: "expired" }, h("div", null,
+      h("div", { class: "seal", html: ICON.envelope }),
+      h("h1", { text: "열람 기간이 끝난 청첩장입니다" }),
+      h("p", { text: (D.expiry.message || "보내주신 축하와 응원에 깊이 감사드립니다.") + "\n\n열람 기간은 " + ek.y + "년 " + ek.m + "월 " + ek.d + "일까지였습니다." }))));
+  }
+
+  /* ---------- boot ---------- */
+  if (EXP && now() >= EXP) { renderExpired(); return; }
+  order.forEach(function (key) {
+    if (!R[key]) return;
+    try { var el = R[key](); if (el) root.appendChild(el); }
+    catch (e) { if (window.console) console.error("section " + key + " failed", e); }
+  });
+  mountBgm(); mountEffect();
+  if (EXP) setInterval(function () { if (now() >= EXP) renderExpired(); }, 30000);
+})();
+</script>
+</body>
+</html>
